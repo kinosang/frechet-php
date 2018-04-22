@@ -1,0 +1,8 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="coord">
+      <file>tests/PointTest.php</file>
+      <file>tests/CurveTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
