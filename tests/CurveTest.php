@@ -16,7 +16,7 @@ class CurveTest extends TestCase
         $curve->addPoint(new Point(1, 1));
         $curve->addPoint(new Point(2, 2));
 
-        $this->assertInstanceOf(Curve::class, $curve);
+        $this->assertInstanceOf('labs7in0\frechet\Curve', $curve);
 
         return $curve;
     }
@@ -55,7 +55,7 @@ class CurveTest extends TestCase
     {
         $reversed = $curve->getReverse();
 
-        $this->assertInstanceOf(Curve::class, $reversed);
+        $this->assertInstanceOf('labs7in0\frechet\Curve', $reversed);
         $this->assertEquals($curve->getPoints(), array_reverse($reversed->getPoints()));
     }
 

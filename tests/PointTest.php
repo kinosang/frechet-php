@@ -11,7 +11,7 @@ class PointTest extends TestCase
     {
         $point = new Point(1, 1);
 
-        $this->assertInstanceOf(Point::class, $point);
+        $this->assertInstanceOf('labs7in0\frechet\Point', $point);
 
         return $point;
     }
